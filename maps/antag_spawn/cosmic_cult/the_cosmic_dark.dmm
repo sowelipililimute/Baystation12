@@ -1,77 +1,77 @@
-"a" = (/turf/space,/area/space)
-"d" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"f" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/rough,/area/space)
-"h" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/rough,/area/space)
-"i" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"k" = (/obj/cosmic_cult/pillar,/turf/simulated/floor/cosmic_cult/rough,/area/space)
-"l" = (/turf/simulated/wall/cult,/area/space)
-"n" = (/obj/cosmic_cult/monument,/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"o" = (/turf/simulated/floor/cosmic_cult/void,/area/space)
-"p" = (/obj/machinery/door/airlock/medical,/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"q" = (/obj/cosmic_cult/pillar,/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"u" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"E" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/rough,/area/space)
-"F" = (/turf/simulated/wall/malign,/area/space)
-"J" = (/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"K" = (/obj/cosmic_cult/vacuous_breach,/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"Q" = (/obj/cosmic_cult/lamp{dir = 1},/turf/simulated/floor/cosmic_cult/malign,/area/space)
-"X" = (/turf/simulated/floor/cosmic_cult/rough,/area/space)
-"Y" = (/obj/machinery/door/airlock/medical,/turf/space,/area/space)
+"a" = (/turf/space,/area/cosmic_dark)
+"b" = (/turf/simulated/wall/malign,/area/cosmic_dark)
+"c" = (/obj/cosmic_cult/pillar,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"d" = (/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"e" = (/obj/cosmic_cult/vacuous_breach,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"f" = (/obj/machinery/door/airlock/medical,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"g" = (/obj/cosmic_cult/pillar,/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
+"h" = (/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
+"i" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
+"j" = (/turf/simulated/floor/cosmic_cult/void,/area/cosmic_dark)
+"k" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"l" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
+"m" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"n" = (/obj/cosmic_cult/monument,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"o" = (/obj/cosmic_cult/lamp{dir = 1},/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"p" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
+"q" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
+"r" = (/obj/machinery/door/airlock/medical,/turf/space,/area/cosmic_dark)
+"s" = (/turf/simulated/wall/cult,/area/cosmic_dark)
 
 (1,1,1) = {"
-aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFqJJJqFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFJJJJJFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFJKJJJFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaFFFFFFFFFJJJJJFFFFaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaFFFFFFFFFFFppFppFFFFFFFFFaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaFFFFFFFFFFFkXXkXXkFFFFFFFFFFaaaaaaaaaaaaaa
-aaaaaaaaaaaFFFFFFFFFXXXXXXJJXXXXXFFFFFFFFFaaaaaaaaaaaa
-aaaaaaaaaaFFFFFhXXJJJJoJXXJJJJJJJJXXXiFFFFFaaaaaaaaaaa
-aaaaaaaaaFFFFkXXJJJoJJJJJXJJJJJJJoJXXXJqFFFaaaaaaaaaaa
-aaaaaaaaaFFFkXJJJJoJJJoooJJJJooJoJJJJJJJqFFFaaaaaaaaaa
-aaaaaaaaFFFFXXJJJooJJooJJJJJJJoooJJJoJJJJFFFaaaaaaaaaa
-aaaaaaaaFFFhXXJooooJJoJJFJJJFJJJJXoooJoJXEFFFaaaaaaaaa
-aaaaaaaaFFFXJJJJooJJJJJFFJJJFFFXJJooooJJJXFFFaaaaaaaaa
-aaaaaaaaFFFXJoJJoJJJoJFFFJqJFFFXXJJJooooJXFFFaaaaaaaaa
-aaaaaaaaFFFJJooJJJJJJJFFJJJJJFFFXXXJJoJooJFFFaaaaaaaaa
-aaaaaaaaFFFJJJoJXXXJFFFFJJJJJFFFFFXXXJoooJFFFaaaaaaaaa
-aaaaaaaaFFFJoooXXFFFFFFuJJJJJiFFFFFFJJJJJJFFFaaaaaaaaa
-aaaaaaaaFFFJoJJXFFFFFJJJJJJJJJJJFFFFFJJJoJFFFaaaaaaaaa
-aaaaaaaFFFFJoJJFFFJJJJJJJJJJJJJoJJJFFFJJJXFFFaaaaaaaaa
-aaaaaaaFFFXXJJJFFJJJooJoJJJJoJJoooJJFFJJoXXFFFaaaaaaaa
-aaaaaaaFFFXXoJJFJJJJJoooJJJJoJJoooJJJFJJooJFFFaaaaaaaa
-FFFFFFFFFFXJoJJFJJJJJooJJXXXJXJoooJJJFJJJoJFFFFFFFFFFF
-FFFFFFFFFFJJJJJFJJJJooJJXJJJXJJJooJJJFJXJoJFFFFFFFFFFF
-FFFFFFFFFFJooJXFJJJJoJJXkJJJqXJoJoJJJFJXJJJFFFFFFFFFFF
-FFFqJJJqpqJoJXXJJJJJJJJJJJJJJJXJJJJJJJXXJJJqpqJJJqJFFF
-FFFJJJJJpJJJJXXJJqJJJJJJJnJJJJJXJJJqJJXXJJXJpJJJJJJFFF
-FFFqKJJqpqXJJJXJJJJoJJJJJJJJJJJJJJoJJJJJJJXqpqKJJqJFFF
-FFFFFFFFFFXJJJJFJJoJJoJJqJJJqJJJJooJJFJJoJXFFFFFFFFFFF
-FFFFFFFFFFXJoJJFJJoJJooJJJJJJJJoJJJJJFJJoJXFFFFFFFFFFF
-FFFFFFFFFFJJJXJFFJJJJooJoJJJJJJoJJoJFFJJoJJFFFFFFFFFFF
-aaaaaaaFFFJoJXJFFFJJJJoooooJJJoJJJJFFFJooJJFFFaaaaaaaa
-aaaaaaaFFFJoJJJJFFFFFJJooJJJoJJJFFFFFJJooJJFFFaaaaaaaa
-aaaaaaaFFFFJJJoJJFFFFFFQJJJoodFFFFFFJJoJJXFFFFaaaaaaaa
-aaaaaaaaFFFXJooJJJJFFFFFJJoJJFFFFFJJJJoJXXFFFaaaaaaaaa
-aaaaaaaaFFFXJooJJJXJJFFFJJJJJFFFJJJoooooXXFFFaaaaaaaaa
-aaaaaaaaFFFXJoJJoJXXXJFFFJqJFFFJJJJoooJJJJFFFaaaaaaaaa
-aaaaaaaaFFFJJJJoJJJJXJFFFJJJFFFJJooooooJJXFFFaaaaaaaaa
-aaaaaaaaFFFQJJooooJJJJJJFJJJFJJJJJJoJJJJXfFFFaaaaaaaaa
-aaaaaaaaFFFFXJJJoooooJJJJJJJJJJooJJJJJJJJFFFFaaaaaaaaa
-aaaaaaaaaFFFkXJJJJJJoooJJJJXJJJoJJXXJJJXkFFFFaaaaaaaaa
-aaaaaaaaaFFFFkXJJJJJJJJJJJJXJJJJJoJJJXJqFFFFFaaaaaaaaa
-aaaaaaaaaaFFFFFQJJJJJJXJJJJXXJJXJoJXXfFFFFFFaaaaaaaaaa
-aaaaaaaaaaFFFFFFFFFFJJJJJJJJXJJJJFFFFFFFFFFFaaaaaaaaaa
-aaaaaaaaaaaaFFFFFFFFFFFqJJqJJqFFFFFFFFFFFFFaaaaaaaaaaa
-aaaaaaaaaaaaaaFFFFFFFFFFYYlYYFFFFFFFFFFFaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaFFFFFFFFFFJJJJJFFFFFFaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFJJJJJFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFJKJJJFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFqJJJqFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbcdddcbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbdddddbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbdedddbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabbbbbbbbbdddddbbbbaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaabbbbbbbbbbbffbffbbbbbbbbbaaaaaaaaaaaaaaaa
+aaaaaaaaaaaabbbbbbbbbbbghhghhgbbbbbbbbbbaaaaaaaaaaaaaa
+aaaaaaaaaaabbbbbbbbbhhhhhhddhhhhhbbbbbbbbbaaaaaaaaaaaa
+aaaaaaaaaabbbbbihhddddjdhhddddddddhhhkbbbbbaaaaaaaaaaa
+aaaaaaaaabbbbghhdddjdddddhdddddddjdhhhdcbbbaaaaaaaaaaa
+aaaaaaaaabbbghddddjdddjjjddddjjdjdddddddcbbbaaaaaaaaaa
+aaaaaaaabbbbhhdddjjddjjdddddddjjjdddjddddbbbaaaaaaaaaa
+aaaaaaaabbbihhdjjjjddjddbdddbddddhjjjdjdhlbbbaaaaaaaaa
+aaaaaaaabbbhddddjjdddddbbdddbbbhddjjjjdddhbbbaaaaaaaaa
+aaaaaaaabbbhdjddjdddjdbbbdcdbbbhhdddjjjjdhbbbaaaaaaaaa
+aaaaaaaabbbddjjdddddddbbdddddbbbhhhddjdjjdbbbaaaaaaaaa
+aaaaaaaabbbdddjdhhhdbbbbdddddbbbbbhhhdjjjdbbbaaaaaaaaa
+aaaaaaaabbbdjjjhhbbbbbbmdddddkbbbbbbddddddbbbaaaaaaaaa
+aaaaaaaabbbdjddhbbbbbdddddddddddbbbbbdddjdbbbaaaaaaaaa
+aaaaaaabbbbdjddbbbdddddddddddddjdddbbbdddhbbbaaaaaaaaa
+aaaaaaabbbhhdddbbdddjjdjddddjddjjjddbbddjhhbbbaaaaaaaa
+aaaaaaabbbhhjddbdddddjjjddddjddjjjdddbddjjdbbbaaaaaaaa
+bbbbbbbbbbhdjddbdddddjjddhhhdhdjjjdddbdddjdbbbbbbbbbbb
+bbbbbbbbbbdddddbddddjjddhdddhdddjjdddbdhdjdbbbbbbbbbbb
+bbbbbbbbbbdjjdhbddddjddhgdddchdjdjdddbdhdddbbbbbbbbbbb
+bbbcdddcfcdjdhhdddddddddddddddhdddddddhhdddcfcdddcdbbb
+bbbdddddfddddhhddcdddddddndddddhdddcddhhddhdfddddddbbb
+bbbceddcfchdddhddddjddddddddddddddjdddddddhcfceddcdbbb
+bbbbbbbbbbhddddbddjddjddcdddcddddjjddbddjdhbbbbbbbbbbb
+bbbbbbbbbbhdjddbddjddjjddddddddjdddddbddjdhbbbbbbbbbbb
+bbbbbbbbbbdddhdbbddddjjdjddddddjddjdbbddjddbbbbbbbbbbb
+aaaaaaabbbdjdhdbbbddddjjjjjdddjddddbbbdjjddbbbaaaaaaaa
+aaaaaaabbbdjddddbbbbbddjjdddjdddbbbbbddjjddbbbaaaaaaaa
+aaaaaaabbbbdddjddbbbbbbodddjjpbbbbbbddjddhbbbbaaaaaaaa
+aaaaaaaabbbhdjjddddbbbbbddjddbbbbbddddjdhhbbbaaaaaaaaa
+aaaaaaaabbbhdjjdddhddbbbdddddbbbdddjjjjjhhbbbaaaaaaaaa
+aaaaaaaabbbhdjddjdhhhdbbbdcdbbbddddjjjddddbbbaaaaaaaaa
+aaaaaaaabbbddddjddddhdbbbdddbbbddjjjjjjddhbbbaaaaaaaaa
+aaaaaaaabbboddjjjjddddddbdddbddddddjddddhqbbbaaaaaaaaa
+aaaaaaaabbbbhdddjjjjjddddddddddjjddddddddbbbbaaaaaaaaa
+aaaaaaaaabbbghddddddjjjddddhdddjddhhdddhgbbbbaaaaaaaaa
+aaaaaaaaabbbbghddddddddddddhdddddjdddhdcbbbbbaaaaaaaaa
+aaaaaaaaaabbbbboddddddhddddhhddhdjdhhqbbbbbbaaaaaaaaaa
+aaaaaaaaaabbbbbbbbbbddddddddhddddbbbbbbbbbbbaaaaaaaaaa
+aaaaaaaaaaaabbbbbbbbbbbcddcddcbbbbbbbbbbbbbaaaaaaaaaaa
+aaaaaaaaaaaaaabbbbbbbbbbrrsrrbbbbbbbbbbbaaaaaaaaaaaaaa
+aaaaaaaaaaaaaabbbbbbbbbbdddddbbbbbbaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbdddddbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbdedddbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbcdddcbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
 "}
