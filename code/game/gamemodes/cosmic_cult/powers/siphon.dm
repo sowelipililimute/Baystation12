@@ -13,4 +13,5 @@
 	set name = "Siphon Entropy"
 
 	var/mob/living/carbon/human/target = get_target(params)
-	log_and_message_admins("[usr] targeted [target] using [params]")
+	do_after(usr, 0.9 SECONDS, target)
+	cosmic_cult_siphon_vfx(target, usr.client)

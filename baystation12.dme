@@ -666,6 +666,7 @@
 #include "code\game\gamemodes\changeling\powers\visible_camouflage.dm"
 #include "code\game\gamemodes\cosmic_cult\cosmic_cult.dm"
 #include "code\game\gamemodes\cosmic_cult\powers.dm"
+#include "code\game\gamemodes\cosmic_cult\vfx.dm"
 #include "code\game\gamemodes\cosmic_cult\powers\siphon.dm"
 #include "code\game\gamemodes\cult\cult.dm"
 #include "code\game\gamemodes\cult\cult_items.dm"
