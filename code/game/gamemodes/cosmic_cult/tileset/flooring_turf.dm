@@ -40,3 +40,9 @@
 	name = "void floor surface"
 	icon_state = "void"
 	initial_flooring = /singleton/flooring/cosmic_cult/void
+
+/turf/simulated/floor/cosmic_cult/void/Initialize()
+	. = ..()
+	var/mutable_appearance/backing = mutable_appearance('icons/turf/space.dmi', "white", plane = SPACE_PLANE)
+	backing.appearance_flags = RESET_COLOR | RESET_ALPHA
+	underlays += backing
