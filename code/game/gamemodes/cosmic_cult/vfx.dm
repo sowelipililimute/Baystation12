@@ -10,6 +10,7 @@
 	vfx.appearance_flags = DEFAULT_APPEARANCE_FLAGS | RESET_TRANSFORM
 	viewer.images += vfx
 	addtimer(new Callback(GLOBAL_PROC, GLOBAL_PROC_REF(cosmic_cult_remove_client_image), viewer, vfx), duration)
+	usr.playsound_local(null, 'sound/coscult/ability-siphon.ogg', 75, 1)
 
 /proc/cosmic_cult_remove_client_image(client/viewer, image/I)
 	if (viewer)

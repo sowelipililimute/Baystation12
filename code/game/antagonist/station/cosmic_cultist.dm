@@ -27,6 +27,7 @@ GLOBAL_TYPED_NEW(cosmic_cult, /datum/antagonist/cosmic_cultist)
 	if(!.)
 		return
 
+	player.current.playsound_local(null, 'sound/coscult/cosmic-start.ogg', 100, 0)
 	new /datum/cosmic_cultist(player)
 
 /datum/antagonist/cosmic_cultist/remove_antagonist(datum/mind/player, show_message, implanted)
