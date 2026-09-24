@@ -3,14 +3,12 @@
 	var/alist/active_powers = alist()
 
 /datum/cosmic_cultist/New(datum/mind/player)
-	log_and_message_admins("player [player] is being cosmic culted")
 	player.cosmic_cultist = src
 	src.owning_mind = player
 
 	// grant powers available to all cosmic cultists
 	for (var/P in cosmic_cult_powers)
 		if (get_power_instance(P).innate_power)
-			log_and_message_admins("granting innate power [P] to [player]")
 			grant_power(P)
 
 var/global/list/cosmic_cult_powers = typesof(/datum/power/cosmic_cult) - /datum/power/cosmic_cult
@@ -32,18 +30,15 @@ GLOBAL_ALIST_EMPTY(cosmic_cult_power_instances)
 // grants a power to the cosmic cultist
 /datum/cosmic_cultist/proc/grant_power(T)
 	if (!ispath(T, /datum/power/cosmic_cult))
-		log_and_message_admins("power [T] is not a cosmic cult power")
 		return
 
 	if (active_powers[T])
-		log_and_message_admins("power [T] is already granted")
 		return
 
 	var/datum/power/cosmic_cult/power = get_power_instance(T)
 	active_powers[T] = power
 
 	if (isnull(owning_mind.current))
-		log_and_message_admins("power [T] has no mind to grant to")
 		return
 
 	if(!owning_mind.current.ability_master)

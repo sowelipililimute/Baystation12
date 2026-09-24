@@ -25,10 +25,8 @@ GLOBAL_TYPED_NEW(cosmic_cult, /datum/antagonist/cosmic_cultist)
 /datum/antagonist/cosmic_cultist/add_antagonist(datum/mind/player, ignore_role, do_not_equip, move_to_spawn, do_not_announce, preserve_appearance)
 	. = ..()
 	if(!.)
-		log_and_message_admins("can't make [player] a cosmic cultist")
 		return
 
-	log_and_message_admins("making [player] a cosmic cultist")
 	new /datum/cosmic_cultist(player)
 
 /datum/antagonist/cosmic_cultist/remove_antagonist(datum/mind/player, show_message, implanted)
