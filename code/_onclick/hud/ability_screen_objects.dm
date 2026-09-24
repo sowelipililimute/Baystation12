@@ -274,6 +274,32 @@
 	if(my_mob.client)
 		toggle_open(2) //forces the icons to refresh on screen
 
+//Cosmic Cultist Abilities
+/obj/screen/ability/verb_based/cosmic_cultist
+	icon = 'icons/coscult/cosmic-actions.dmi'
+	icon_state = "default"
+	background_base_state = "default"
+
+//use this to force add powers
+/obj/screen/movable/ability_master/proc/add_cosmic_cult_ability(object_given, verb_given, name_given, ability_icon_given, arguments)
+	if(!object_given)
+		message_admins("ERROR: add_cosmic_cult_ability() was not given an object in its arguments.")
+	if(!verb_given)
+		message_admins("ERROR: add_cosmic_cult_ability() was not given a verb/proc in its arguments.")
+	if(get_ability_by_proc_ref(verb_given))
+		return // Duplicate
+	var/obj/screen/ability/verb_based/cosmic_cultist/A = new /obj/screen/ability/verb_based/cosmic_cultist()
+	A.ability_master = src
+	A.object_used = object_given
+	A.verb_to_call = verb_given
+	A.ability_icon_state = ability_icon_given
+	A.SetName(name_given)
+	if(arguments)
+		A.arguments_to_use = arguments
+	ability_objects.Add(A)
+	if(my_mob.client)
+		toggle_open(2) //forces the icons to refresh on screen
+
 
 /////////Obj Abilities////////
 //Buttons to trigger objects//
