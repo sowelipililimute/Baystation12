@@ -281,7 +281,7 @@
 	background_base_state = "default"
 
 //use this to force add powers
-/obj/screen/movable/ability_master/proc/add_cosmic_cult_ability(object_given, verb_given, name_given, ability_icon_given, arguments)
+/obj/screen/movable/ability_master/proc/add_cosmic_cult_ability(object_given, verb_given, name_given, desc_given, ability_icon_given, arguments)
 	if(!object_given)
 		message_admins("ERROR: add_cosmic_cult_ability() was not given an object in its arguments.")
 	if(!verb_given)
@@ -294,11 +294,19 @@
 	A.verb_to_call = verb_given
 	A.ability_icon_state = ability_icon_given
 	A.SetName(name_given)
+	A.desc = desc_given
 	if(arguments)
 		A.arguments_to_use = arguments
 	ability_objects.Add(A)
 	if(my_mob.client)
 		toggle_open(2) //forces the icons to refresh on screen
+
+/obj/screen/ability/verb_based/cosmic_cultist/MouseEntered(location, control, params)
+	openToolTip(usr, src, params, name, desc)
+
+
+/obj/screen/ability/verb_based/cosmic_cultist/MouseExited(location, control, params)
+	closeToolTip(usr)
 
 
 /////////Obj Abilities////////

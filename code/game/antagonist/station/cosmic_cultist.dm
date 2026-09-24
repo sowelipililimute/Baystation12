@@ -35,3 +35,9 @@ GLOBAL_TYPED_NEW(cosmic_cult, /datum/antagonist/cosmic_cultist)
 		return
 
 	player.cosmic_cultist.Remove()
+
+/proc/is_cosmic_cultist(mob/subject)
+	var/datum/mind/mind = subject
+	if (ismob(mind))
+		mind = subject.mind
+	return istype(mind) && !isnull(mind.cosmic_cultist)

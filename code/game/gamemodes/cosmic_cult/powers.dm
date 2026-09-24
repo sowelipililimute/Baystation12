@@ -49,8 +49,9 @@ GLOBAL_ALIST_EMPTY(cosmic_cult_power_instances)
 		object_given = src,
 		verb_given = power.verbpath,
 		name_given = power.name,
+		desc_given = power.desc,
 		ability_icon_given = power.ability_icon_state,
-		arguments = list()
+		arguments = list(power)
 	)
 
 // revokes a power from the cosmic cultist
@@ -72,14 +73,67 @@ GLOBAL_ALIST_EMPTY(cosmic_cult_power_instances)
 	if(C)
 		owning_mind.current.ability_master.remove_ability(C)
 
+// gets a target based on the power in params
+/datum/cosmic_cultist/proc/get_target(list/params)
+	var/datum/power/cosmic_cult/power = params[1]
+	if (!istype(power))
+		return
+
+	return power.get_target(src)
+
 // power that a cosmic cultist can have
 /datum/power/cosmic_cult
 	// if the power is granted just by virtue of being a cultist
 	var/innate_power = FALSE
 
-// helper proc to reduce boilerplate between verb impls
-/datum/cosmic_cultist/proc/cosmic_cult_power()
-	if (!owning_mind)
-		return FALSE
+// gets a target
+/datum/power/cosmic_cult/proc/get_target(datum/cosmic_cultist/cultist)
+	if (isnull(cultist.owning_mind.current))
+		return
 
-	return TRUE
+	if (!cultist.owning_mind.current.PushClickHandler(/datum/click_handler/cosmic_cult/pick_target))
+		return
+
+	var/datum/click_handler/cosmic_cult/pick_target/CH = cultist.owning_mind.current.click_handlers[1]
+	CH.power = src
+	var/deadline = world.time + 10 SECONDS
+	while (!CH.done && world.time < deadline && !QDELETED(CH))
+		sleep(world.tick_lag)
+	cultist.owning_mind.current.RemoveClickHandler(CH)
+
+	return CH.picked
+
+// if the actor can perform the power
+/datum/power/cosmic_cult/proc/can_perform(mob/M)
+	return !M.incapacitated()
+
+// if the actor can reach the atom with the power
+/datum/power/cosmic_cult/proc/can_reach(mob/M, atom/A)
+	return M.Adjacent(A)
+
+// if the atom is a valid target
+/datum/power/cosmic_cult/proc/can_target(atom/A)
+	return ismob(A)
+
+// if the atom could be a valid target (superset of can_target)
+/datum/power/cosmic_cult/proc/could_target(atom/A)
+	return ismob(A)
+
+/datum/click_handler/cosmic_cult/pick_target
+	flags = CLICK_HANDLER_REMOVE_ON_MOB_LOGOUT | CLICK_HANDLER_REMOVE_IF_NOT_TOP | CLICK_HANDLER_REMOVE_ON_CANCEL
+
+	var/atom/picked
+	var/datum/power/cosmic_cult/power
+	var/done = FALSE
+
+/datum/click_handler/cosmic_cult/pick_target/OnClick(atom/A, params)
+	if (power.can_perform(user) && power.can_reach(user, hovered_atom) && power.can_target(hovered_atom))
+		picked = A
+
+	done = TRUE
+
+/datum/click_handler/cosmic_cult/pick_target/Exit()
+	done = TRUE
+
+/datum/click_handler/cosmic_cult/pick_target/proc/is_reachable(mob/M, atom/A)
+	return M == user && power.can_perform(M) && power.can_reach(M, A) && power.can_target(A)
