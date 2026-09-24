@@ -1,0 +1,77 @@
+"a" = (/turf/space,/area/space)
+"d" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"f" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/rough,/area/space)
+"h" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/rough,/area/space)
+"i" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"k" = (/obj/cosmic_cult/pillar,/turf/simulated/floor/cosmic_cult/rough,/area/space)
+"l" = (/turf/simulated/wall/cult,/area/space)
+"n" = (/obj/cosmic_cult/monument,/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"o" = (/turf/simulated/floor/cosmic_cult/void,/area/space)
+"p" = (/obj/machinery/door/airlock/medical,/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"q" = (/obj/cosmic_cult/pillar,/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"u" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"E" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/rough,/area/space)
+"F" = (/turf/simulated/wall/malign,/area/space)
+"J" = (/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"K" = (/obj/cosmic_cult/vacuous_breach,/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"Q" = (/obj/cosmic_cult/lamp{dir = 1},/turf/simulated/floor/cosmic_cult/malign,/area/space)
+"X" = (/turf/simulated/floor/cosmic_cult/rough,/area/space)
+"Y" = (/obj/machinery/door/airlock/medical,/turf/space,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFqJJJqFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFJJJJJFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFJKJJJFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaFFFFFFFFFJJJJJFFFFaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaFFFFFFFFFFFppFppFFFFFFFFFaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaFFFFFFFFFFFkXXkXXkFFFFFFFFFFaaaaaaaaaaaaaa
+aaaaaaaaaaaFFFFFFFFFXXXXXXJJXXXXXFFFFFFFFFaaaaaaaaaaaa
+aaaaaaaaaaFFFFFhXXJJJJoJXXJJJJJJJJXXXiFFFFFaaaaaaaaaaa
+aaaaaaaaaFFFFkXXJJJoJJJJJXJJJJJJJoJXXXJqFFFaaaaaaaaaaa
+aaaaaaaaaFFFkXJJJJoJJJoooJJJJooJoJJJJJJJqFFFaaaaaaaaaa
+aaaaaaaaFFFFXXJJJooJJooJJJJJJJoooJJJoJJJJFFFaaaaaaaaaa
+aaaaaaaaFFFhXXJooooJJoJJFJJJFJJJJXoooJoJXEFFFaaaaaaaaa
+aaaaaaaaFFFXJJJJooJJJJJFFJJJFFFXJJooooJJJXFFFaaaaaaaaa
+aaaaaaaaFFFXJoJJoJJJoJFFFJqJFFFXXJJJooooJXFFFaaaaaaaaa
+aaaaaaaaFFFJJooJJJJJJJFFJJJJJFFFXXXJJoJooJFFFaaaaaaaaa
+aaaaaaaaFFFJJJoJXXXJFFFFJJJJJFFFFFXXXJoooJFFFaaaaaaaaa
+aaaaaaaaFFFJoooXXFFFFFFuJJJJJiFFFFFFJJJJJJFFFaaaaaaaaa
+aaaaaaaaFFFJoJJXFFFFFJJJJJJJJJJJFFFFFJJJoJFFFaaaaaaaaa
+aaaaaaaFFFFJoJJFFFJJJJJJJJJJJJJoJJJFFFJJJXFFFaaaaaaaaa
+aaaaaaaFFFXXJJJFFJJJooJoJJJJoJJoooJJFFJJoXXFFFaaaaaaaa
+aaaaaaaFFFXXoJJFJJJJJoooJJJJoJJoooJJJFJJooJFFFaaaaaaaa
+FFFFFFFFFFXJoJJFJJJJJooJJXXXJXJoooJJJFJJJoJFFFFFFFFFFF
+FFFFFFFFFFJJJJJFJJJJooJJXJJJXJJJooJJJFJXJoJFFFFFFFFFFF
+FFFFFFFFFFJooJXFJJJJoJJXkJJJqXJoJoJJJFJXJJJFFFFFFFFFFF
+FFFqJJJqpqJoJXXJJJJJJJJJJJJJJJXJJJJJJJXXJJJqpqJJJqJFFF
+FFFJJJJJpJJJJXXJJqJJJJJJJnJJJJJXJJJqJJXXJJXJpJJJJJJFFF
+FFFqKJJqpqXJJJXJJJJoJJJJJJJJJJJJJJoJJJJJJJXqpqKJJqJFFF
+FFFFFFFFFFXJJJJFJJoJJoJJqJJJqJJJJooJJFJJoJXFFFFFFFFFFF
+FFFFFFFFFFXJoJJFJJoJJooJJJJJJJJoJJJJJFJJoJXFFFFFFFFFFF
+FFFFFFFFFFJJJXJFFJJJJooJoJJJJJJoJJoJFFJJoJJFFFFFFFFFFF
+aaaaaaaFFFJoJXJFFFJJJJoooooJJJoJJJJFFFJooJJFFFaaaaaaaa
+aaaaaaaFFFJoJJJJFFFFFJJooJJJoJJJFFFFFJJooJJFFFaaaaaaaa
+aaaaaaaFFFFJJJoJJFFFFFFQJJJoodFFFFFFJJoJJXFFFFaaaaaaaa
+aaaaaaaaFFFXJooJJJJFFFFFJJoJJFFFFFJJJJoJXXFFFaaaaaaaaa
+aaaaaaaaFFFXJooJJJXJJFFFJJJJJFFFJJJoooooXXFFFaaaaaaaaa
+aaaaaaaaFFFXJoJJoJXXXJFFFJqJFFFJJJJoooJJJJFFFaaaaaaaaa
+aaaaaaaaFFFJJJJoJJJJXJFFFJJJFFFJJooooooJJXFFFaaaaaaaaa
+aaaaaaaaFFFQJJooooJJJJJJFJJJFJJJJJJoJJJJXfFFFaaaaaaaaa
+aaaaaaaaFFFFXJJJoooooJJJJJJJJJJooJJJJJJJJFFFFaaaaaaaaa
+aaaaaaaaaFFFkXJJJJJJoooJJJJXJJJoJJXXJJJXkFFFFaaaaaaaaa
+aaaaaaaaaFFFFkXJJJJJJJJJJJJXJJJJJoJJJXJqFFFFFaaaaaaaaa
+aaaaaaaaaaFFFFFQJJJJJJXJJJJXXJJXJoJXXfFFFFFFaaaaaaaaaa
+aaaaaaaaaaFFFFFFFFFFJJJJJJJJXJJJJFFFFFFFFFFFaaaaaaaaaa
+aaaaaaaaaaaaFFFFFFFFFFFqJJqJJqFFFFFFFFFFFFFaaaaaaaaaaa
+aaaaaaaaaaaaaaFFFFFFFFFFYYlYYFFFFFFFFFFFaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaFFFFFFFFFFJJJJJFFFFFFaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFJJJJJFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFJKJJJFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFqJJJqFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaa
+"}

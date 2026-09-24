@@ -22,6 +22,8 @@ GLOBAL_TYPED_NEW(cosmic_cult, /datum/antagonist/cosmic_cultist)
 
 	faction = "cosmic_cult"
 
+	base_to_load = /datum/map_template/ruin/antag_spawn/cosmic_cult
+
 /datum/antagonist/cosmic_cultist/add_antagonist(datum/mind/player, ignore_role, do_not_equip, move_to_spawn, do_not_announce, preserve_appearance)
 	. = ..()
 	if(!.)
