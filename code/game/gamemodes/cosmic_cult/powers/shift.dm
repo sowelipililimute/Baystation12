@@ -7,8 +7,28 @@
 
 /datum/cosmic_cultist/proc/shift(list/params)
 	set category = "Cosmic Cult"
-	set name = "Siphon Entropy"
+	set name = "Astral Shift"
 
-	var/mob/living/carbon/human/target = get_target(params)
-	if (do_after(usr, 0.9 SECONDS, target))
-		cosmic_cult_siphon_vfx(target, usr.client)
+	var/turf/exit = owning_mind.current.loc
+	var/turf/entry = pick(GLOB.cosmic_dark_entries)
+	var/mob/target = owning_mind.current
+
+	cosmic_cult_shift_vfx(target)
+	var/entry_filter = cosmic_cult_sink_out(target)
+	sleep(2 SECONDS)
+
+	target.forceMove(entry)
+	cosmic_cult_shift_vfx(target)
+	sleep(1 SECONDS)
+	cosmic_cult_sink_in(target, entry_filter)
+
+	do_after(usr, 35 SECONDS, usr, DO_BOTH_CAN_MOVE | DO_SHOW_PROGRESS | DO_BOTH_CAN_TURN | DO_USER_INTERRUPT, INCAPACITATION_NONE)
+
+	cosmic_cult_shift_vfx(owning_mind.current)
+	var/exit_filter = cosmic_cult_sink_out(target)
+	sleep(2 SECONDS)
+
+	target.forceMove(exit)
+	cosmic_cult_shift_vfx(owning_mind.current)
+	sleep(1 SECONDS)
+	cosmic_cult_sink_in(target, exit_filter)

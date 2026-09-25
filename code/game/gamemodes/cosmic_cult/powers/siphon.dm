@@ -12,10 +12,6 @@
 	set category = "Cosmic Cult"
 	set name = "Siphon Entropy"
 
-	var/turf/exit = owning_mind.current.loc
-	var/turf/entry = pick(GLOB.cosmic_dark_entries)
-	owning_mind.current.forceMove(entry)
-
-	do_after(usr, 35 SECONDS, usr, DO_BOTH_CAN_MOVE | DO_SHOW_PROGRESS | DO_BOTH_CAN_TURN | DO_USER_INTERRUPT, INCAPACITATION_NONE)
-
-	owning_mind.current.forceMove(exit)
+	var/mob/living/carbon/human/target = get_target(params)
+	if (do_after(usr, 0.9 SECONDS, target))
+		cosmic_cult_siphon_vfx(target, usr.client)
