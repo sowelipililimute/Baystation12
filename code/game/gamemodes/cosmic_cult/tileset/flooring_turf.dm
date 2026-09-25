@@ -40,24 +40,14 @@
 	name = "void floor surface"
 	icon_state = "void"
 	initial_flooring = /singleton/flooring/cosmic_cult/void
-
-/turf/simulated/floor/cosmic_cult/void/Initialize()
-	. = ..()
-	var/mutable_appearance/backing = mutable_appearance('icons/turf/space.dmi', "white", plane = SPACE_PLANE)
-	backing.appearance_flags = RESET_COLOR | RESET_ALPHA
-	underlays += backing
+	z_flags = ZM_MIMIC_DEFAULTS
 
 /turf/simulated/floor/cosmic_cult/decay
 	name = "decaying malign surface"
 	icon = 'icons/coscult/cosmicfloor-decay.dmi'
 	icon_state = "full"
 	initial_flooring = /singleton/flooring/cosmic_cult/decay
-
-/turf/simulated/floor/cosmic_cult/decay/Initialize()
-	. = ..()
-	var/mutable_appearance/backing = mutable_appearance('icons/turf/space.dmi', "white", plane = SPACE_PLANE)
-	backing.appearance_flags = RESET_COLOR | RESET_ALPHA
-	underlays += backing
+	z_flags = ZM_MIMIC_DEFAULTS
 
 /turf/simulated/floor/cosmic_cult/decay/on_update_icon()
 	. = ..()
