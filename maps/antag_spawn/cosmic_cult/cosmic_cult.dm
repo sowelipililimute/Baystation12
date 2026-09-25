@@ -10,6 +10,7 @@
 	var/ambient_group_index = SSambient_lighting.create_group("#42356c", 1.0)
 	if (ambient_group_index < 0)
 		return
+	SSambient_lighting.z_group_indices["[z]"] = ambient_group_index
 	var/datum/ambient_group/group = SSambient_lighting.groups[ambient_group_index]
 	for (var/turf/T in block(locate(1, 1, z), locate(world.maxx, world.maxy, z)))
 		if (TURF_IS_DYNAMICALLY_LIT_UNSAFE(T))
