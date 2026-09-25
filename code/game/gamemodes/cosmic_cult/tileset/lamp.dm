@@ -6,6 +6,7 @@
 
 /obj/cosmic_cult/lamp/Initialize()
 	. = ..()
+	set_light(6, 1, "#42a4ae")
 	update_icon()
 
 /obj/cosmic_cult/lamp/on_update_icon()
