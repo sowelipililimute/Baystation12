@@ -15,6 +15,7 @@
 "o" = (/obj/cosmic_cult/lamp{dir = 1},/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
 "p" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
 "q" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
+"K" = (/obj/landmark/cosmic_cult/entry,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
@@ -47,12 +48,12 @@ bbbbbbbbbbdjjdhbddddjddhgdddchdjdjdddbdhdddbbbbbbbbbbb
 bbbcdddcfcdjdhhdddddddddddddddhdddddddhhdddcfcdddcdbbb
 bbbddeddfddddhhddcddddddddnddddhdddcddhhddhdfddedddbbb
 bbbcdddcfchdddhddddjddddddddddddddjdddddddhcfcdddcdbbb
-bbbbbbbbbbhddddbddjddjddcdddcddddjjddbddjdhbbbbbbbbbbb
-bbbbbbbbbbhdjddbddjddjjddddddddjdddddbddjdhbbbbbbbbbbb
-bbbbbbbbbbdddhdbbddddjjdjddddddjddjdbbddjddbbbbbbbbbbb
-aaaaaaabbbdjdhdbbbddddjjjjjdddjddddbbbdjjddbbbaaaaaaaa
-aaaaaaabbbdjddddbbbbbddjjdddjdddbbbbbddjjddbbbaaaaaaaa
-aaaaaaabbbbdddjddbbbbbbodddjjpbbbbbbddjddhbbbbaaaaaaaa
+bbbbbbbbbbhddddbddjddjdKcdddcddddjjddbddjdhbbbbbbbbbbb
+bbbbbbbbbbhdjddbddjKdjjdddddKdKjddKddbddjdhbbbbbbbbbbb
+bbbbbbbbbbdddhdbbdddKjjdjKdddddjddjdbbddjddbbbbbbbbbbb
+aaaaaaabbbdjdhdbbbddddjjjjjdKdjddKdbbbdjjddbbbaaaaaaaa
+aaaaaaabbbdjddddbbbbbdKjjdddjdKdbbbbbddjjddbbbaaaaaaaa
+aaaaaaabbbbdddjddbbbbbbodKdjjpbbbbbbddjddhbbbbaaaaaaaa
 aaaaaaaabbbhdjjddddbbbbbddjddbbbbbddddjdhhbbbaaaaaaaaa
 aaaaaaaabbbhdjjdddhddbbbdddddbbbdddjjjjjhhbbbaaaaaaaaa
 aaaaaaaabbbhdjddjdhhhdbbbdcdbbbddddjjjddddbbbaaaaaaaaa
