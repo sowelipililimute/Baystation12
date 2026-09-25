@@ -46,3 +46,26 @@
 	var/mutable_appearance/backing = mutable_appearance('icons/turf/space.dmi', "white", plane = SPACE_PLANE)
 	backing.appearance_flags = RESET_COLOR | RESET_ALPHA
 	underlays += backing
+
+/turf/simulated/floor/cosmic_cult/decay
+	name = "decaying malign surface"
+	icon = 'icons/coscult/cosmicfloor-decay.dmi'
+	icon_state = "full"
+	initial_flooring = /singleton/flooring/cosmic_cult/void
+
+/turf/simulated/floor/cosmic_cult/decay/on_update_icon()
+	..()
+
+	ClearOverlays()
+
+	var/list/dirs = list()
+
+	for(var/stepdir in GLOB.alldirs)
+		var/turf/simulated/floor/cosmic_cult/decay/T = get_step(src, stepdir)
+		if(istype(T))
+			dirs += get_dir(src, T)
+	var/list/connections = dirs_to_corner_states(dirs)
+
+	for(var/i = 1 to 4)
+		var/I = image(icon, "floor[connections[i]]", dir = SHIFTL(1, i - 1))
+		AddOverlays(I)

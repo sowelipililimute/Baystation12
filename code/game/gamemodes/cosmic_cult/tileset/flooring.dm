@@ -38,3 +38,8 @@
 /singleton/flooring/cosmic_cult/void
 	name = "void malign surface"
 	icon_base = "void"
+
+/singleton/flooring/cosmic_cult/decay
+	name = "decaying malign surface"
+	icon = 'icons/coscult/cosmicfloor-decay.dmi'
+	icon_base = "full"
