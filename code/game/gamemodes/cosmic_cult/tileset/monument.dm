@@ -4,6 +4,11 @@
 	icon = 'icons/coscult/cosmic-monument.dmi'
 	icon_state = "base"
 	pixel_x = -32
+	bound_x = -32
+	bound_width = 96
+	density = TRUE
+	anchored = TRUE
+	layer = ABOVE_HUMAN_LAYER
 
 /obj/cosmic_cult/monument/Initialize()
 	. = ..()
