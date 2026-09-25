@@ -7,4 +7,7 @@
 
 /obj/cosmic_cult/monument/Initialize()
 	. = ..()
+	update_icon()
+
+/obj/cosmic_cult/monument/on_update_icon()
 	set_light(6, 1, "#42a4ae")

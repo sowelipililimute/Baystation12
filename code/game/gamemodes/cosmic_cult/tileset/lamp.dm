@@ -6,7 +6,6 @@
 
 /obj/cosmic_cult/lamp/Initialize()
 	. = ..()
-	set_light(6, 1, "#42a4ae")
 	update_icon()
 
 /obj/cosmic_cult/lamp/on_update_icon()
@@ -15,3 +14,4 @@
 		emissive_appearance(icon, "glow"),
 		overlay_image(icon, "glow")
 	))
+	set_light(6, 1, "#42a4ae")
