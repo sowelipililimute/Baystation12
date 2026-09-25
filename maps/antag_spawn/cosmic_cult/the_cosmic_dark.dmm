@@ -7,7 +7,7 @@
 "g" = (/obj/cosmic_cult/pillar,/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
 "h" = (/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
 "i" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
-"j" = (/turf/simulated/floor/cosmic_cult/void,/area/cosmic_dark)
+"j" = (/turf/simulated/floor/cosmic_cult/decay,/area/cosmic_dark)
 "k" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
 "l" = (/obj/cosmic_cult/lamp{dir = 8},/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
 "m" = (/obj/cosmic_cult/lamp{dir = 4},/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
