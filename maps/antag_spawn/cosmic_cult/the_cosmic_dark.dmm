@@ -15,8 +15,6 @@
 "o" = (/obj/cosmic_cult/lamp{dir = 1},/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
 "p" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/malign,/area/cosmic_dark)
 "q" = (/obj/cosmic_cult/lamp,/turf/simulated/floor/cosmic_cult/rough,/area/cosmic_dark)
-"r" = (/obj/machinery/door/airlock/medical,/turf/space,/area/cosmic_dark)
-"s" = (/turf/simulated/wall/cult,/area/cosmic_dark)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaa
@@ -66,7 +64,7 @@ aaaaaaaaabbbbghddddddddddddhdddddjdddhdcbbbbbaaaaaaaaa
 aaaaaaaaaabbbbboddddddhddddhhddhdjdhhqbbbbbbaaaaaaaaaa
 aaaaaaaaaabbbbbbbbbbddddddddhddddbbbbbbbbbbbaaaaaaaaaa
 aaaaaaaaaaaabbbbbbbbbbbcddcddcbbbbbbbbbbbbbaaaaaaaaaaa
-aaaaaaaaaaaaaabbbbbbbbbbrrsrrbbbbbbbbbbbaaaaaaaaaaaaaa
+aaaaaaaaaaaaaabbbbbbbbbbffbffbbbbbbbbbbbaaaaaaaaaaaaaa
 aaaaaaaaaaaaaabbbbbbbbbbdddddbbbbbbaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaabbbdddddbbbaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaabbbdedddbbbaaaaaaaaaaaaaaaaaaaaaa
