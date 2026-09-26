@@ -3,21 +3,17 @@
 	desc = "Slip back into phase with realspace to return to where you came from."
 	ability_icon_state = "return"
 	innate_power = FALSE
-	verbpath = /datum/cosmic_cultist/proc/astral_return
 
-/datum/cosmic_cultist/proc/astral_return(list/params)
-	set category = "Cosmic Cult"
-	set name = "Astral Return"
-
-	cosmic_cult_shift_vfx(owning_mind.current)
-	cosmic_cult_sink_out(owning_mind.current)
+/datum/power/cosmic_cult/execute(datum/cosmic_cultist/cultist, datum/action/cosmic_cult/action)
+	cosmic_cult_shift_vfx(cultist.owning_mind.current)
+	cosmic_cult_sink_out(cultist.owning_mind.current)
 	sleep(2 SECONDS)
 
-	owning_mind.current.forceMove(return_to)
-	cosmic_cult_shift_vfx(owning_mind.current)
+	cultist.owning_mind.current.forceMove(cultist.return_to)
+	cosmic_cult_shift_vfx(cultist.owning_mind.current)
 	sleep(1 SECONDS)
-	cosmic_cult_sink_in(owning_mind.current)
+	cosmic_cult_sink_in(cultist.owning_mind.current)
 
-	return_to = null
+	cultist.return_to = null
 
-	revoke_power(/datum/power/cosmic_cult/astral_return)
+	cultist.revoke_power(/datum/power/cosmic_cult/astral_return)

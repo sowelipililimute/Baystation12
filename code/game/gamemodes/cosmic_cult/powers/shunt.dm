@@ -3,16 +3,12 @@
 	desc = "Shunt your target's mind out of their body and unto the cosmic dark, temporarily rendering their body mindless."
 	ability_icon_state = "shunt"
 	innate_power = TRUE
-	verbpath = /datum/cosmic_cultist/proc/shunt
 
 /datum/power/cosmic_cult/shunt/can_target(atom/A)
 	return !is_cosmic_cultist(A) && ishuman(A)
 
-/datum/cosmic_cultist/proc/shunt(list/params)
-	set category = "Cosmic Cult"
-	set name = "Shunt Subjectivity"
-
-	var/mob/living/carbon/human/target = get_target(params)
+/datum/power/cosmic_cult/shunt/execute(datum/cosmic_cultist/cultist, datum/action/cosmic_cult/action)
+	var/mob/living/carbon/human/target = get_target(cultist)
 	var/datum/mind/mind = target.mind
 	if (!istype(target) || !istype(mind))
 		return
@@ -29,16 +25,13 @@
 
 	sleep(22 SECONDS)
 
-	var/datum/action/action = new /datum/action/cosmic_cult/astral_return(target)
-	action.Grant(wisp)
+	var/datum/action/wisp_action = new /datum/action/cosmic_cult/astral_return(target)
+	wisp_action.Grant(wisp)
 
 /datum/action/cosmic_cult/astral_return
 	name = "Astral Return"
 	desc = "Return back to your body."
-	button_icon = 'icons/coscult/cosmic-actions.dmi'
 	button_icon_state = "return"
-	background_icon_state = "default"
-	action_type = AB_INNATE
 
 /datum/action/cosmic_cult/astral_return/Activate()
 	owner.mind?.transfer_to(target)

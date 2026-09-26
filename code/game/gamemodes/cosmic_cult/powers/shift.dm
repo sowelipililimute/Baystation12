@@ -3,18 +3,14 @@
 	desc = "Slip out of phase with realspace in order to access the cosmic dark."
 	ability_icon_state = "shift"
 	innate_power = TRUE
-	verbpath = /datum/cosmic_cultist/proc/shift
 
 /datum/cosmic_cultist
 	var/turf/return_to
 
-/datum/cosmic_cultist/proc/shift(list/params)
-	set category = "Cosmic Cult"
-	set name = "Astral Shift"
-
-	return_to = owning_mind.current.loc
+/datum/power/cosmic_cult/shift/execute(datum/cosmic_cultist/cultist, datum/action/cosmic_cult/action)
+	cultist.return_to = cultist.owning_mind.current.loc
 	var/turf/entry = pick(GLOB.cosmic_dark_entries)
-	var/mob/target = owning_mind.current
+	var/mob/target = cultist.owning_mind.current
 
 	if (istype(get_area(target), /area/cosmic_dark))
 		return
@@ -28,4 +24,4 @@
 	sleep(1 SECONDS)
 	cosmic_cult_sink_in(target)
 
-	grant_power(/datum/power/cosmic_cult/astral_return)
+	cultist.grant_power(/datum/power/cosmic_cult/astral_return)
