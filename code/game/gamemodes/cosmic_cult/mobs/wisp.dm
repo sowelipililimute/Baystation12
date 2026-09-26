@@ -7,6 +7,9 @@
 	update_icon()
 	set_light(4, 2, "#42a4ae")
 
+	add_language(LANGUAGE_MALIGN_LOCAL)
+	set_default_language(all_languages[LANGUAGE_MALIGN_LOCAL])
+
 /mob/living/cosmic_cult/wisp/on_update_icon()
 	ClearOverlays()
 
