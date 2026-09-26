@@ -14,6 +14,7 @@
 
 /datum/action
 	var/name = "Generic Action"
+	var/desc = null
 	var/action_type = AB_ITEM
 	var/procname = null
 	var/atom/movable/target = null
@@ -123,6 +124,9 @@
 /datum/action/proc/UpdateName()
 	return name
 
+/datum/action/proc/UpdateDesc()
+	return desc
+
 /obj/screen/movable/action_button
 	var/datum/action/owner
 	screen_loc = "WEST,NORTH"
@@ -149,8 +153,10 @@
 
 
 /obj/screen/movable/action_button/MouseEntered(location, control, params)
-	openToolTip(usr, src, params, tooltip_title, name)
-
+	if (isnull(desc))
+		openToolTip(usr, src, params, tooltip_title, name)
+	else
+		openToolTip(usr, src, params, name, desc)
 
 /obj/screen/movable/action_button/MouseExited(location, control, params)
 	closeToolTip(usr)

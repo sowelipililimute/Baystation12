@@ -71,13 +71,13 @@
 /proc/cosmic_cult_sink_out(atom/atom, duration = 1 SECOND)
 	playsound(atom.loc, 'sound/coscult/ability-shift-out.ogg', 75, FALSE)
 	atom.appearance_flags |= KEEP_TOGETHER
-	atom.filters += filter(type = "alpha", icon = icon('icons/effects/effects.dmi', "white"))
-	var/mask = atom.filters[length(atom.filters)]
+	atom.filters += filter(type = "alpha", icon = icon('icons/effects/effects.dmi', "white"), name = "cosmic_cult_sink")
+	var/mask = atom.filters["cosmic_cult_sink"]
 	animate(atom, pixel_y = atom.pixel_y - world.icon_size, time = duration, easing = EASE_IN | CUBIC_EASING, flags = ANIMATION_PARALLEL)
 	animate(mask, y = world.icon_size, time = duration, easing = EASE_IN | CUBIC_EASING, flags = ANIMATION_PARALLEL)
-	return mask
 
-/proc/cosmic_cult_sink_in(atom/atom, mask, duration = 1 SECOND)
+/proc/cosmic_cult_sink_in(atom/atom, duration = 1 SECOND)
+	var/mask = atom.filters["cosmic_cult_sink"]
 	playsound(atom.loc, 'sound/coscult/ability-shift-in.ogg', 75, FALSE)
 	animate(mask, y = 0, time = duration, easing = EASE_OUT | CUBIC_EASING, flags = ANIMATION_PARALLEL)
 	animate(atom, pixel_y = atom.pixel_y + world.icon_size, time = duration, easing = EASE_OUT | CUBIC_EASING, flags = ANIMATION_PARALLEL)

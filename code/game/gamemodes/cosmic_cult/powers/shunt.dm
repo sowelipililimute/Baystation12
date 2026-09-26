@@ -13,8 +13,36 @@
 	set name = "Shunt Subjectivity"
 
 	var/mob/living/carbon/human/target = get_target(params)
-	if (!istype(target))
+	var/datum/mind/mind = target.mind
+	if (!istype(target) || !istype(mind))
 		return
 
-	if (do_after(usr, 0.6 SECONDS, target))
-		cosmic_cult_shunt_vfx(target, usr.client)
+	if (!do_after(usr, 0.6 SECONDS, target))
+		return
+
+	cosmic_cult_shunt_vfx(target)
+
+	var/turf/entry = pick(GLOB.cosmic_dark_entries)
+	var/mob/wisp = new /mob/living/cosmic_cult/wisp(entry)
+	mind.transfer_to(wisp)
+	cosmic_cult_shunt_vfx(wisp)
+
+	sleep(22 SECONDS)
+
+	var/datum/action/action = new /datum/action/cosmic_cult/astral_return(target)
+	action.Grant(wisp)
+
+/datum/action/cosmic_cult/astral_return
+	name = "Astral Return"
+	desc = "Return back to your body."
+	button_icon = 'icons/coscult/cosmic-actions.dmi'
+	button_icon_state = "return"
+	background_icon_state = "default"
+	action_type = AB_INNATE
+
+/datum/action/cosmic_cult/astral_return/Activate()
+	owner.mind?.transfer_to(target)
+
+	cosmic_cult_shunt_vfx(owner)
+	qdel(owner)
+	qdel(src)

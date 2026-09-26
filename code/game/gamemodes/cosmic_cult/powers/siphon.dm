@@ -16,5 +16,7 @@
 	if (!istype(target))
 		return
 
-	if (do_after(usr, 0.9 SECONDS, target))
-		cosmic_cult_siphon_vfx(target, usr.client)
+	if (!do_after(usr, 0.9 SECONDS, target))
+		return
+
+	cosmic_cult_siphon_vfx(target, usr.client)
